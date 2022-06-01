@@ -1,0 +1,9 @@
+h1 {
+	font-weight: 400;
+}
+
+.newsitem img {
+	float: right;
+	width: 20%;
+	margin-left: 20px;
+}

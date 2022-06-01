@@ -1,0 +1,100 @@
+html, body {
+	background: #111155;
+	margin: 0;
+	border: 0;
+	font-family: "Helvetica", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img { /* Please die in a fire, IE. */
+	border: 0;
+}
+
+#header {
+	text-align: center;
+}
+
+#title {
+	color: #cc9;
+	text-align: center;
+	font-size: 300%;
+}
+
+#headimg img {
+	width: 100%;
+}
+
+#nav {
+	text-align: center;
+	margin: 5px 0;
+}
+
+#nav a {
+	color: #cc9;
+	margin: 0 10px;
+}
+
+#nav a:hover, #nav .navcurrent {
+	text-shadow: #cc0 0 0 5px;
+}
+
+.subnav {
+	display: none;
+	height: 0;
+	background: #cc9;
+	text-align: center;
+}
+
+.subnav.perm {
+	display: block;
+	height: 20px;
+	padding: 5px 0;
+}
+
+.subnav a {
+	color: #115;
+	margin: 0 10px;
+	height: 0;
+}
+
+.subnav.perm a {
+	display: inline;
+}
+
+.subnav a:hover, .subnav .navcurrent {
+	text-shadow: #115 0 0 5px;
+}
+
+#contents {
+	background-color: #cc9; /* For older browsers.  Everyone needs to stop using IE. */
+	background: url(../images/gradSubNav.png) top repeat-x, url(../images/gradBottom.png) bottom repeat-x #cc9;
+	color: #115;
+	padding: 20px;
+}
+
+#contents hr {
+	width: 90%;
+	color: #115;
+	background-color: #115;
+	height: 2px;
+	border: 0;
+	margin: 10px auto;
+}
+
+#footer {
+	color: #fff;
+	text-align: center;
+	font-size: 75%;
+	clear: both;
+}
+
+#footer a {
+	color: #aa7;
+}
+
+#footerbar {
+	border-bottom: 1px solid #fff;
+}

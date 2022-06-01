@@ -1,0 +1,74 @@
+#contents {
+	padding-right: 20%;
+}
+
+#oarlogo {
+	text-align: center;
+	padding: 10px;
+}
+
+#maininfo {
+	font-weight: 700;
+}
+
+#dynamiccontent {
+	width: 100%;
+	overflow: auto;
+	border-top: 2px solid #115;
+	border-bottom: 2px solid #115;
+	padding-top: 5px;
+}
+
+#latestnews {
+	width: 50%;
+	float: left;
+	border-right: 2px solid #115;
+	height: 100%;
+}
+
+#futureevents {
+	width: 49%;
+	float: right;
+}
+
+#latestnews li, #futureevents li {
+	margin: 3px 0;
+}
+
+.newsdate, .eventdate {
+	font-style: italic;
+}
+
+#adspace {
+	font-size: 50%;
+	clear: left;
+	text-align: center;
+	position: relative;
+	top: 10px;
+}
+
+#adspace p {
+	font-size: 150%;
+}
+
+#adspace img {
+	width: 30%;
+}
+
+#slideshow {
+	text-align: center;
+}
+
+#slideshow img {
+	display: none;
+	height: 500px;
+}
+
+#sideimg {
+	width: 20%;
+	float: right;
+}
+
+#sideimg img {
+	width: 100%;
+}

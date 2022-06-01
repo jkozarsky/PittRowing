@@ -1,0 +1,13 @@
+#pittdonate {
+	float: right;
+}
+
+#leftroll {
+	float: left;
+	width: 49%;
+}
+
+#rightroll {
+	width: 49%;
+	float: right;
+}

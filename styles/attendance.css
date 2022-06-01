@@ -1,0 +1,55 @@
+input, textarea {
+	background: #cc9;
+	border: 1px solid #115;
+	vertical-align: top;
+}
+
+textarea {
+	width: 30%;
+	height: 100px;
+}
+
+#contents div {
+	padding: 10px;
+}
+
+#form_error, #cal_error {
+	font-weight: 700;
+	color: #c00;
+}
+
+#form_success {
+	font-weight: 700;
+	color: #090;
+	display: none;
+}
+
+#calendar_pick {
+	display: none;
+	border: 1px solid #115;
+	background: #cc9;
+}
+
+#calendar_pick div {
+	padding: 0;
+}
+
+#date_picker, #month_prev, #month_next, #date_pick_table td {
+	cursor: pointer;
+}
+
+#month_picker {
+	text-align: center;
+}
+
+#month_prev {
+	float: left;
+}
+
+#month_next {
+	float: right;
+}
+
+#date_picker {
+	margin-left: 5px;
+}
