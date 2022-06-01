@@ -1,0 +1,225 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+
+<title>Pitt Rowing</title> 
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta name="author" content="Nick Bourdakos">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- Font --> 
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,700,900' rel='stylesheet' type='text/css'>
+
+<!-- Style Sheets --> 
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/coaches.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/attendence.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/trunk.css" />
+
+<!-- Scripts --> 
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined')
+		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" + 
+															"type='text/javascript'%3E%3C/script%3E"))
+</script>
+<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
+<script type="text/javascript" src="js/autoresize.jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+
+</head> 
+ 
+<body> 
+	<!-- ///////////////////////////////////////////ATTENDANCE FORM//////////////////////////////////////////////////////// -->
+<div id="fill">
+<form action="https://docs.google.com/forms/d/1aRyQNi24i8hMCHBZ4Hb5zyXQ5W3g2P6eBarHKDpb3Vg/viewform?fbzx=-1185206941640522629" method="post" id="attendance_form" target="form_data_dest">
+	<div class="actionbar">
+		<div id="close"><input type="button" name="close" value="" class="close"/></div>
+		<div id="attendance_submit"><input type="submit" name="submit" value="" class="sumbit"/></div>
+		<div id="poptitle">Attendance Form</div>
+	</div>
+
+	<div class="formcont">
+		<div class="textp">Please fill in all of the fields below. If you need to be gone for multiple days, submit a new entry for each.</div>
+		<!-- <label for="name_entry">Name</label> -->
+		<div class="group">
+			<input type="text" name="entry.0.single" id="name_entry" required>
+			<span class="highlight"></span>
+	      	<span class="bar"></span>
+	      	<label class="label1">Name</label>
+		</div>
+		<div class="group">
+			<input type="text" name="entry.1.single" id="alternate" required>
+			<span class="highlight"></span>
+			<span class="bar"></span>
+			<label class="label1">Date</label>
+		</div>
+		<div id="fill2"><div id="datepicker"></div></div>
+		<!-- <label for="reason_entry">Reason</label> -->
+		<div class="group">
+			<textarea name="entry.3.single" rows="1" cols="75" required></textarea>
+			<span class="highlight"></span>
+			<span class="bar"></span>
+			<label class="label1">Reason</label>
+	    </div>
+	</div>
+</form>
+</div>
+	<!-- ///////////////////////////////////////////ATTENDANCE FORM//////////////////////////////////////////////////////// -->
+
+<!-- ///////////////////////////////////////////NAVIGATION//////////////////////////////////////////////////////// -->
+<div class="container">
+	<div class="topbar">
+		<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+			<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+				<li></li><li></li><li></li>
+			</ul>
+			<div class="containermi"><img src="spitt2.png" class="logo"/><h1 class="title">Rowing</h1></div>
+		</header>
+
+		<nav class="slide">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="roster.html">Roster</a></li>
+				<li><a href="coaches.html" class="active">Coaches</a></li>
+				<li><a href="join-info.html">Join</a></li>
+				<li><a href="facilities.html">Facilities</a></li>
+				<li><a href="conditions.html">Conditions</a></li>
+				<li><a href="socialMedia.html"> Social Media</a></li>
+				<li><a href="https://spreadsheets.google.com/embeddedform?formkey=dF9ZS3cxREg4bWZQSU5vVTktc1l4WVE6MQ">Alumni</a></li>
+				<li><a href="donation.html">Donate</a></li>
+				<li><a href="https://spreadsheets.google.com/embeddedform?formkey=dDVuaVRNSU0zd2sxaGF2bjFLSlRqekE6MQ">Work Weekends</a></li>
+				<li><a href="https://sites.google.com/site/pittmastersrowingclub/home">Masters</a></li>
+				<li><a href="https://docs.google.com/forms/d/1aRyQNi24i8hMCHBZ4Hb5zyXQ5W3g2P6eBarHKDpb3Vg/viewform?fbzx=-1185206941640522629">Attendance Form</a></li>
+				<li><a href="teamDocs.html">Team Documents</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="content slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+		<ul class="responsive">
+			<li class="header-section">
+				<p class="placefiller">
+					<div class="nav2">
+					<ul>
+						<li>
+							<a href="join-info.html">Join</a>
+						</li>
+					</ul>
+					</div>
+				</p>
+			</li>
+<!-- ///////////////////////////////////////////NAVIGATION//////////////////////////////////////////////////////// -->
+			<li class="body-section">
+				<p class="placefiller">
+					<div>
+						<img class="slideshow" src='slideshow/coachpage.png'/>
+					</div>
+					<div class="banner">
+						<div class="varsity">Coaching Staff</div>
+					</div>
+					<div class="profile">
+						<div class="photo"><img src='profiles/daniel.png'/></div>
+						<div class="info">
+							<div class="name">Daniel Grancea</div>
+							<div class="bold" id="class">(Head Coach)</div>
+							<div class="details">Fourteen years ago Daniel Grancea assumed the responsibility and role as the Head Coach of the University of Pittsburgh Rowing Club. Coming into a team built on potential, he had a vision for the future that perhaps few could perceive. Over the years Daniel has invested unimaginable amounts of his time and energy into building a lasting legacy for the University of Pittsburgh Rowing Club.<br/><br/>In these fourteen short years this vision has become a reality. Under Daniel's leadership, the team has come to achieve numerous institutional and athletic successes, acquiring a brand new fleet of racing shells, the development of a strong network of administrative and financial relations, and of course, medals earned on the water. Recognized in 2011 as ACRA Regional Coach of the Year, Daniel encourages the qualities of perseverance, self-discipline, pride, and passion in all his rowers as athletes and individuals in our everyday lives. Throughout every year, every practice, and every stroke, Daniel's unyielding confidence and standards that he has taught us to uphold in ourselves has made Pitt Crew the successful team that it has come to be.</div>
+						</div>
+					</div>
+					<div class="profile">
+						<div class="photo"><img src='profiles/Laure.jpg'/></div>
+						<div class="info">
+							<div class="name">Lauren Schall</div>
+							<div class="bold" id="class">(Varsity Women's Coach)</div>
+							<div class="details">Lauren began her rowing career as a novice at Pitt, and after a very successful year coaching the novice women in 2015 she has led the varsity women's team to new heights for the past two years. After completing four years as an oarsmen for Pittsburgh, she rowed with Vesper's U23 summer squad and continues to train in the single. Along with Pitt, she currently coaches at Steel City Rowing Club. She is honored to work with such a great group of women and continue to grow the program of her alma mater. In 2017, Lauren was recognized as ACRA Regional Coach of the Year. </div>
+						</div>
+					</div>
+					<div class="profile">
+						<div class="photo"></div>
+						<div class="info">
+							<div class="name">Jacques Bromberg</div>
+							<div class="bold" id="class">(Assistant Men's Coach)</div>
+							<div class="details"><p>Jacques Bromberg joined the Faculty of Classics at Pitt in 2014 as an Assistant Professor of Greek. He holds a B.A. and M.A. in Classics from Stanford, and a Ph.D. in Classical Studies from the University of Pennsylvania. Professor Bromberg teaches courses at Pitt in Greek language, literature, and history, archaeology, the history of medicine, and the history/philosophy of sport. He came to Pitt from Duke where from 2012-2014 he taught in the Department of Classical Studies and coached the Duke Men's Crew. During his tenure as coach at Duke, his rowers medaled every year at Mid-Atlantic Erg Sprints, won gold, silver, and bronze medals at SIRA Championships, and earned trips to 'A' Finals at both the Dad Vail and ACRA regattas.</p><br><p>Professor Bromberg began his rowing career at Stanford in 1996. He was on the crews that won the Newport Invitational Regatta in 1997 and earned a silver medal at the California Rowing Championships in 1998. In those same years, he trained and competed with the US Rowing men's lightweight development camp at Riverside Boat Club in his beloved hometown of Boston. He now lives in Highland Park with his wife, two boys, and a model-c ergometer, and quietly dreams of future parent-child events at HOTO, HOCR, and HOSR.</p></div>
+						</div>
+					</div>
+					<div class="profile">
+						<div class="photo"><img src='profiles/coachzach.png'/></div>
+						<div class="info">
+							<div class="name">Zach Petronic</div>
+							<div class="bold" id="class">(Assistant Men's Coach)</div>
+							<div class="details"><p>Zach Petronic began rowing in 2006 for North Allegheny High School in Wexford, PA, winning medals in the 2x and 4x at the national level in the Junior A category. Zach continued rowing and began coaching for Pittsburgh Rowing Club and Pine Richland Crew in 2012.</p><br><p>Zach went on to make two National Teams in 2013 and 2015 in the 8+ and 1x respectively at the World University Games. Zach began coaching at Steel City Rowing in Verona in 2015 and served as Head Coach at SCRC briefly before leaving in the fall of 2017 to pursue training full-time.</p></div>
+						</div>
+					</div>
+					<div class="profile">
+						<div class="photo"><img src='profiles/coachwill.png'/></div>
+						<div class="info">
+							<div class="name">Will Massimini</div>
+							<div class="bold" id="class">(Novice Men's Coach)</div>
+							<div class="details">Will returns for his fifth year of coaching the novice men's team. He raced as a four year rower at DeMatha Catholic High School and rowed all four years at the University of Pittsburgh. He holds a B.S. in Computer Engineering and a minor in Mathematics from his time at Pitt. Over this summer he obtained his USRowing Coaching Level 2 certification. He also returned to competitive rowing with a full racing schedule in the summer and fall seasons, competing at USRowing Club Nationals in the Intermediate 1x, Intermediate 2x, and Intermediate 4x, at St. Catharine's Invitational in the Senior 1x, and at the Royal Canadian Henley Regatta in the Senior 4x over the summer. His Novice Men's 8+ have reached the semifinals of the Dad Vail Regatta three of the previous four years. He is looking forward to creating the varsity rowers who will lead the team in the years to come.</div>
+						</div>
+					</div>
+					<div class="profile">
+						<div class="photo"><img src='profiles/coachchris.png'/></div>
+						<div class="info">
+							<div class="name">Chris Garver</div>
+							<div class="bold" id="class">(Novice Women's Coach)</div>
+							<div class="details">Chris started rowing in high school with a local scholastic program and he continued to row during his time at Pitt. After graduating in 2016 with a bachelors in rehabilitation sciences, he joined Three Rivers Rowing Association as a volunteer for their adaptive rowing program. Over the following year, he coached several TRRA Masters programs, TRRA Juniors, and a scholastic girls club, First Row. He is excited to work with Pitt's Novice Women in his second year of coaching. Along with growing a competitive women's team, Chris hopes to create a positive training environment in which the novice women have the opportunity to develop into successful student athletes.</div><br><br>
+						</div>
+					</div>
+				</p>
+			</li>
+		</ul>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+
+	$('textarea').autoResize();
+
+	$('#datepicker').hide();
+    $("#fill").hide();
+	$("#fill2").hide();
+
+    $("#alternate").click(function () {
+    	$("input").blur();
+    	$('#fill2').toggle();
+        $("#datepicker").toggle();
+    });
+
+    $(".open").click(function () {
+        $("#fill").show();
+    });
+    $("#close").click(function () {
+        $("#fill").hide();
+    });
+
+    $( "#datepicker" ).datepicker({ 
+   	dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+    onSelect: function(selectedDate){
+    	$("#datepicker").hide();
+    	$('#fill2').hide();
+    	$('#alternate').val(selectedDate);
+    	// alert(selectedDate);
+    }
+});
+
+</script>	
+</body> 
+</html>
+
+
+
+
+
+
+

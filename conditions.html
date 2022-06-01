@@ -1,0 +1,275 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+
+<title>Pitt Rowing</title> 
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta name="author" content="Nick Bourdakos">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- Font --> 
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,700,900' rel='stylesheet' type='text/css'>
+
+<!-- Style Sheets --> 
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/conditions.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/attendence.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/trunk.css" />
+
+<!-- Scripts --> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/2.5.0/jquery.simpleWeather.min.js"></script>
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined')
+		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" + 
+															"type='text/javascript'%3E%3C/script%3E"))
+</script>
+<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
+<script type="text/javascript" src="js/autoresize.jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+
+</head> 
+ 
+<body> 
+<!-- ///////////////////////////////////////////ATTENDANCE FORM//////////////////////////////////////////////////////// -->
+<div id="fill">
+<form action="https://docs.google.com/forms/d/1aRyQNi24i8hMCHBZ4Hb5zyXQ5W3g2P6eBarHKDpb3Vg/viewform?fbzx=-1185206941640522629" method="post" id="attendance_form" target="form_data_dest">
+	<div class="actionbar">
+		<div id="close"><input type="button" name="close" value="" class="close"/></div>
+		<div id="attendance_submit"><input type="submit" name="submit" value="" class="sumbit"/></div>
+		<div id="poptitle">Attendance Form</div>
+	</div>
+
+	<div class="formcont">
+		<div class="textp">Please fill in all of the fields below. If you need to be gone for multiple days, submit a new entry for each.</div>
+		<!-- <label for="name_entry">Name</label> -->
+		<div class="group">
+			<input type="text" name="entry.0.single" id="name_entry" required>
+			<span class="highlight"></span>
+	      	<span class="bar"></span>
+	      	<label class="label1">Name</label>
+		</div>
+		<div class="group">
+			<input type="text" name="entry.1.single" id="alternate" required>
+			<span class="highlight"></span>
+			<span class="bar"></span>
+			<label class="label1">Date</label>
+		</div>
+		<div id="fill2"><div id="datepicker"></div></div>
+		<!-- <label for="reason_entry">Reason</label> -->
+		<div class="group">
+			<textarea name="entry.3.single" rows="1" cols="75" required></textarea>
+			<span class="highlight"></span>
+			<span class="bar"></span>
+			<label class="label1">Reason</label>
+	    </div>
+	</div>
+</form>
+</div>
+	<!-- ///////////////////////////////////////////ATTENDANCE FORM//////////////////////////////////////////////////////// -->
+
+<!-- ///////////////////////////////////////////NAVIGATION//////////////////////////////////////////////////////// -->
+<div class="container">
+	<div class="topbar">
+		<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+			<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+				<li></li><li></li><li></li>
+			</ul>
+			<div class="containermi"><img src="spitt2.png" class="logo"/><h1 class="title">Rowing</h1></div>
+		</header>
+
+		<nav class="slide">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="roster.html">Roster</a></li>
+				<li><a href="coaches.html">Coaches</a></li>
+				<li><a href="join-info.html">Join</a></li>
+				<li><a href="facilities.html">Facilities</a></li>
+				<li><a href="conditions.html" class="active">Conditions</a></li>
+				<li><a href="socialMedia.html"> Social Media</a></li>
+				<li><a href="https://spreadsheets.google.com/embeddedform?formkey=dF9ZS3cxREg4bWZQSU5vVTktc1l4WVE6MQ">Alumni</a></li>
+				<li><a href="donation.html">Donate</a></li>
+				<li><a href="https://spreadsheets.google.com/embeddedform?formkey=dDVuaVRNSU0zd2sxaGF2bjFLSlRqekE6MQ">Work Weekends</a></li>
+				<li><a href="https://sites.google.com/site/pittmastersrowingclub/home">Masters</a></li>
+				<li><a href="https://docs.google.com/forms/d/1aRyQNi24i8hMCHBZ4Hb5zyXQ5W3g2P6eBarHKDpb3Vg/viewform?fbzx=-1185206941640522629">Attendance Form</a></li>
+				<li><a href="teamDocs.html">Team Documents</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="content slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+		<ul class="responsive">
+			<li class="header-section">
+				<p class="placefiller">
+					<div class="nav2">
+					<ul>
+						<li>
+							<a href="join-info.html">Join</a>
+						</li>
+					</ul>
+					</div>
+				</p>
+			</li>
+<!-- ///////////////////////////////////////////NAVIGATION//////////////////////////////////////////////////////// -->
+			<li class="body-section">
+				<p class="placefiller">
+					<div id="weather"></div>
+					<script>
+						// Docs at http://simpleweatherjs.com
+						$(document).ready(function() {
+						  $.simpleWeather({
+						    woeid: '2473224',
+						    unit: 'f',
+						    success: function(weather) {
+						      c=weather.code; 
+						      if (c==0 || 19<=c && c<=30 || c==44){
+						        html = '<img class="slideshow" src="slideshow/citycloudy.png"/>';
+						      }
+						      else if (1<=c && c<=12 || c==35 || 37<=c && c<=41 || c==45 || c==47){
+						        html = '<img class="slideshow" src="slideshow/cityrain.png"/>';
+						      }
+						      else if (13<=c && c<=18 || 42<=c && c<=43 || c==46){
+						        html = '<img class="slideshow" src="slideshow/citysnow.png"/>';
+						      }
+						      else {
+						        html = '<img class="slideshow" src="slideshow/city.png"/>';
+						      }
+						      html += '<div class="contweather"><div class="temp">'+weather.temp+'&deg;'+weather.units.temp+'</div>';
+						      html += '<div class="cond">'+weather.currently+'</div></div>';
+						      //html += '<h3>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</h3>';
+
+						      $("#weather").html(html);
+						    },
+						    error: function(error) {
+						      $("#weather").html('<p>'+error+'</p>');
+						    }
+						  });
+						});
+
+					</script>
+					<div class="banner">
+						<div class="bantitle">Conditions</div>
+						<div class="details1">
+						Can we row today?  Check the
+						<a href="http://threeriversrowing.org/wp-content/uploads/2013/06/Safety-Matrix-Updated-3.31.15.pdf">TRRA Safety Matrix</a>
+						for the Allegheny river.
+					</div>
+					</div>
+					<div class="name1">Allegheny River</div>
+					<div class="bold">River Flow</div>
+					<div class="imgback">
+						<div class="details">
+							View the current flow rate at the
+							<a href="http://waterdata.usgs.gov/pa/nwis/uv?cb_00060=on&amp;format=gif_default&amp;period=7&amp;site_no=03049500">USGS website</a>
+							.
+						</div>
+						<div class="clip">
+							<img class="graph" src="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=03049500&amp;parm_cd=00060&amp;period=7" alt="Flow rate graph for the past 7 days" title="Flow rate over the past 7 days" />
+						</div>
+					</div>
+					<div class="bold">Water Temperature</div>
+					<div class="imgback">
+						<div class="details">
+							View the current water temperature at the
+							<a href="http://waterdata.usgs.gov/pa/nwis/uv?cb_00010=on&amp;format=gif_default&amp;period=7&amp;site_no=03049640">USGS website</a>
+							.
+						</div>
+						<div class="clip">
+							<img class="graph" src="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=03049640&amp;parm_cd=00010&amp;period=7" alt="Water temperature graph for the past 7 days" title="Water temperature over the past 7 days" />
+						</div>
+					</div>
+					<div class="bold">Gage Height</div>
+					<div class="imgback">
+						<div class="details">
+							View the current gage height at the
+							<a href="http://waterdata.usgs.gov/pa/nwis/uv/?site_no=03049681&amp;PARAmeter_cd=00065">USGS website</a>
+							.
+						</div>
+						<div class="clip">
+							<img class="graph" src="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=03049681&amp;parm_cd=00065&amp;period=7" alt="Gage height graph for the past 7 days" title="Gage height over the past 7 days" />
+						</div>
+					</div>
+					<div class="name">Monongahela River</div>
+					<div class="bold">River Flow</div>
+					<div class="imgback">
+						<div class="details">
+							View the current flow rate at the
+							<a href="http://waterdata.usgs.gov/pa/nwis/uv?cb_00060=on&cb_00010=on&format=gif_default&period=7&site_no=03075070">USGS website</a>
+							.
+						</div>
+						<div class="clip">
+							<img class="graph" src="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=03075070&amp;parm_cd=00060&amp;period=7" alt="Flow rate graph for the past 7 days" title="Flow rate over the past 7 days" />
+						</div>
+					</div>
+					<div class="bold">Water Temperature</div>
+					<div class="imgback">
+						<div class="details">
+							View the current water temperature at the
+							<a href="http://waterdata.usgs.gov/pa/nwis/uv?cb_00060=on&cb_00010=on&format=gif_default&period=7&site_no=03075070">USGS website</a>
+							.
+						</div>
+						<div class="clip">
+							<img class="graph" src="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=03075070&amp;parm_cd=00010&amp;period=7" alt="Water temperature graph for the past 7 days" title="Water temperature over the past 7 days" />
+						</div>
+					</div>
+					<div class="bold">Gage Height</div>
+					<div class="imgback">
+						<div class="details">
+							View the current gage height at the
+							<a href="http://waterdata.usgs.gov/pa/nwis/uv?cb_00065=on&amp;format=gif_default&amp;period=7&amp;site_no=03085152">USGS website</a>
+							.
+						</div>
+						<div class="clip">
+							<img class="graph" src="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=03085152&amp;parm_cd=00065&amp;period=7" alt="Gage height graph for the past 7 days" title="Gage height over the past 7 days" />
+						</div>
+					</div>
+				</p>
+			</li>
+		</ul>
+	</div>
+	
+</div>
+<script type="text/javascript">
+
+	$('textarea').autoResize();
+
+	$('#datepicker').hide();
+    $("#fill").hide();
+	$("#fill2").hide();
+
+    $("#alternate").click(function () {
+    	$("input").blur();
+    	$('#fill2').toggle();
+        $("#datepicker").toggle();
+    });
+
+    $(".open").click(function () {
+        $("#fill").show();
+    });
+    $("#close").click(function () {
+        $("#fill").hide();
+    });
+
+    $( "#datepicker" ).datepicker({ 
+   	dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+    onSelect: function(selectedDate){
+    	$("#datepicker").hide();
+    	$('#fill2').hide();
+    	$('#alternate').val(selectedDate);
+    	// alert(selectedDate);
+    }
+});
+
+</script>
+</body> 
+</html>

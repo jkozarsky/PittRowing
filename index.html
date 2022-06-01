@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Pitt Rowing</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta name="author" content="Nick Bourdakos">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- Font -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,700,900' rel='stylesheet' type='text/css'>
+
+<!-- Style Sheets -->
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/home.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/attendence.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/trunk.css" />
+
+<!-- Scripts -->
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined')
+		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" +
+															"type='text/javascript'%3E%3C/script%3E"))
+</script>
+<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
+<script type="text/javascript" src="js/autoresize.jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+
+</head>
+
+<body>
+	<!-- ///////////////////////////////////////////ATTENDANCE FORM//////////////////////////////////////////////////////// -->
+<div id="fill">
+<form action="https://docs.google.com/forms/d/1aRyQNi24i8hMCHBZ4Hb5zyXQ5W3g2P6eBarHKDpb3Vg/viewform?fbzx=-1185206941640522629" method="post" id="attendance_form" target="form_data_dest">
+	<div class="actionbar">
+		<div id="close"><input type="button" name="close" value="" class="close"/></div>
+		<div id="attendance_submit"><input type="submit" name="submit" value="" class="sumbit"/></div>
+		<div id="poptitle">Attendance Form</div>
+	</div>
+
+	<div class="formcont">
+		<div class="textp">Please fill in all of the fields below. If you need to be gone for multiple days, submit a new entry for each.</div>
+		<!-- <label for="name_entry">Name</label>-->
+		<div class="group">
+			<input type="text" name="entry.0.single" id="name_entry" required>
+			<span class="highlight"></span>
+	      	<span class="bar"></span>
+	      	<label class="label1">Name</label>
+		</div>
+		<div class="group">
+			<input type="text" name="entry.1.single" id="alternate" required>
+			<span class="highlight"></span>
+			<span class="bar"></span>
+			<label class="label1">Date</label>
+		</div>
+		<div id="fill2"><div id="datepicker"></div></div>
+		<!-- <label for="reason_entry">Reason</label>-->
+		<div class="group">
+			<textarea name="entry.3.single" rows="1" cols="75" required></textarea>
+			<span class="highlight"></span>
+			<span class="bar"></span>
+			<label class="label1">Reason</label>
+	    </div>
+	</div>
+</form>
+</div>
+	<!-- ///////////////////////////////////////////ATTENDANCE FORM//////////////////////////////////////////////////////// -->
+
+<!-- ///////////////////////////////////////////NAVIGATION//////////////////////////////////////////////////////// -->
+<div class="container">
+	<div class="topbar">
+		<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+			<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+				<li></li><li></li><li></li>
+			</ul>
+			<div class="containermi"><img src="spitt2.png" class="logo"/><h1 class="title">Rowing</h1></div>
+		</header>
+
+		<nav class="slide">
+			<ul>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="roster.html">Roster</a></li>
+				<li><a href="coaches.html">Coaches</a></li>
+				<li><a href="join-info.html">Join</a></li>
+				<li><a href="facilities.html">Facilities</a></li>
+				<li><a href="conditions.html">Conditions</a></li>
+				<li><a href="socialMedia.html">Social Media</a></li>
+				<li><a href="https://spreadsheets.google.com/embeddedform?formkey=dF9ZS3cxREg4bWZQSU5vVTktc1l4WVE6MQ">Alumni</a></li>
+				<li><a href="donation.html">Donate</a></li>
+				<li><a href="https://spreadsheets.google.com/embeddedform?formkey=dDVuaVRNSU0zd2sxaGF2bjFLSlRqekE6MQ">Work Weekends</a></li>
+				<li><a href="https://sites.google.com/site/pittmastersrowingclub/home">Masters</a></li>
+				<li><a href="https://docs.google.com/forms/d/1aRyQNi24i8hMCHBZ4Hb5zyXQ5W3g2P6eBarHKDpb3Vg/viewform?fbzx=-1185206941640522629">Attendance Form</a></li>
+				<li><a href="teamDocs.html">Team Documents</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="content slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+		<ul class="responsive">
+			<li class="header-section">
+				<p class="placefiller">
+					<div class="nav2">
+					<ul>
+						<li>
+							<a href="join-info.html">Join</a>
+						</li>
+					</ul>
+					</div>
+				</p>
+			</li>
+<!-- ///////////////////////////////////////////NAVIGATION//////////////////////////////////////////////////////// -->
+			<li class="body-section">
+				<p class="placefiller">
+					<div>
+						<img class="slideshow" src='slideshow/VarsityTeamPic.jpg'/>
+					</div>
+					<div id="schedule">
+						<div class="scheduleheader">Spring 2020 Racing Schedule </div>
+						<div id="schedulelist" class="list">
+							<div class="circle"><div class="bnk"></div>Jan<br>25</div>
+							<div class="item">
+								<div class="event">Pittsbugh Indoor Sprints</div>
+								<div class="location">Pittsburgh, PA</div>
+							</div>
+							<br>
+							<div class="circle"><div class="bnk"></div>May<br>8-9</div>
+							<div class="item">
+								<div class="event">Dad Vail Regatta</div>
+								<div class="location">Philadelphia, PA</div>
+							</div>
+							<br>
+							<div class="circle"><div class="bnk"></div>May<br>22-24</div>
+							<div class="item">
+								<div class="event">ACRAs</div>
+								<div class="location">Lake Lanier, GA</div>
+							</div>
+							<br>
+							<br>
+						</div>
+					</div>
+					<div id="news">
+						<div class="newsheader">News</div>
+						<div id="schedulelist" class="list">
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B_B1BR2lklKvU1NiWFBCVE5KdzJDQWYxeHVNYjJianFSYzJR/view?usp=sharing">
+									<img class="thumb" src='news/HOTOcc2019.png'/>
+									<div class="itemnews">
+										<div class="event">Pitt Crew </div>
+										<div class="details">Fairfax Station, Virginia - The University of Pittsburgh Rowing Team went out with a bang last
+weekend at the Head of the Occoquan (HOTOcc) to end their fall season with strength and excellence.</div>
+									</div>
+								</a>
+							</div>
+					</div>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B_B1BR2lklKvREpVcDNNRHhNZjRYSHFPN0ozaVFscG9BMEtR/view?usp=sharing">
+									<img class="thumb" src='news/HOSR2019.jpg'/>
+									<div class="itemnews">
+										<div class="event">Pitt Crew Gains Momenutm in Philadelphia</div>
+										<div class="details">Philadelphia, Pennsylvania - The University of Pittsburgh Rowing Team held their own this past weekend at the Head of the Schuykill Regatta (HOSR) against over 250 schools competeing on  race day.</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+								<a href="https://drive.google.com/file/d/0B_B1BR2lklKvX284NjNVOGdYQVRDM3VMLWdSRktXUEJKRTlN/view?usp=sharing">
+									<img class="thumb" src='news/hoto2019.png'/>
+									<div class="itemnews">
+										<div class="event">Pitt Crew Starts the Season Strong</div>
+										<div class="details">Pittsburgh, PA - Pitt Crew kicked off the fall racing season at the Annual Head of the Ohio
+(HOTO) Regatta on the Allegheny. The day began bright and early with Pitt Crew competing in the first
+and final races of the day. Despite this long day, they did not falter and maintained their hunger and
+drive for victory, bringing home a total of 10 medals: 4 gold, 3 silver, and 3 bronze. </div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/1FEIpUffEj6-26BWP_5cgH8v3gJ7DRikg/view?usp=sharing">
+									<img class="thumb" src='news/acras2018.png'/>
+									<div class="itemnews">
+										<div class="event">Pitt Crew Takes Home Hardware on National Stage</div>
+										<div class="details">GAINESVILLE, GA - The University of Pittsburgh Rowing Team (Pitt Crew) hit the road Memorial Day weekend for an impressive performance at the American Collegiate Rowing Association (ACRA) National Championship Regatta in Georgia. Competing against schools from all over the U.S. on Lake Lanier, the 1996 Olympic course, Pitt Crew rose to the occasion and brought home the hardware for the university. </div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/1ppI8fkf7zWd12zxXXGkUTm9bAeZQf7gb/view?usp=sharing">
+									<img class="thumb" src='news/dv2018.png'/>
+									<div class="itemnews">
+										<div class="event">Pitt Crew Surges to Finals at Dad Vail Regatta</div>
+										<div class="details">Philadelphia, PA - It was a successful weekend full of fast racing for the University of Pittsburgh Rowing Team (Pitt Crew) at the annual Dad Vail Regatta, the largest collegiate regatta in the United States. After earning some hardware at the Knecht Cup in New Jersey</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/open?id=12EHYStfZ0Qs5gOJj0vAH_tiHOb03cphu">
+									<img class="thumb" src='news/knecht2018.png'/>
+									<div class="itemnews">
+										<div class="event">Successful Start to Spring Season for Pitt Crew</div>
+										<div class="details">West Windsor Township, NJ - After countless hours of grueling indoor training and months of dreary winter weather, the University of Pittsburgh Rowing Team (Pitt Crew) finally got back on the water for the team's first race of the spring season</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/196trlp2zRn7knPV-JEQ2LD8dNoA31cFw/view?usp=sharing">
+									<img class="thumb" src='news/occ2017.png'/>
+									<div class="itemnews">
+										<div class="event">Pitt Crew Garners Hardware at Final Fall Race</div>
+										<div class="details">Fairfax Station, VA - With the fall foliage in prime colors, the University of Pittsburgh Rowing Team took to the Occoquan River for their last race of the fall season. After strong performances at the</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/1RwRt9Wu5Bp7P-i6FfK37oul_aT7AAtIC/view?usp=sharing">
+									<img class="thumb" src='news/hosr2017.png'/>
+									<div class="itemnews">
+										<div class="event">Pitt Crew Surges Forward in Philadelphia</div>
+										<div class="details">Philadelphia, PA - The University of Pittsburgh Rowing Team held their own against top tier competitors at the annual Head of the Schuylkill Regatta (HOSR). Coming off of a strong start to the fall season</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B4h3E4YE6UuETWdvUVF3X0lyQ0E/view?usp=sharing">
+									<img class="thumb" src='news/hoto2017.png'/>
+									<div class="itemnews">
+										<div class="event">Pitt Crew Dominates Home Regatta</div>
+										<div class="details">Pittsburgh, PA - The University of Pittsburgh Rowing Team did not mess around at the annual Head of the Ohio (HOTO) Regatta on the Allegheny River. As the first race of the season for the crew and a home race on the Allegheny River </div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B4h3E4YE6UuEVTRBRm40bndYOGc/view?usp=sharing">
+									<img class="thumb" src='news/vails2017.png'/>
+									<div class="itemnews">
+										<div class="event">Can't Keep Pitt Crew Down</div>
+										<div class="details">Philadelphia, PA - We had a rough start to our regatta this past weekend and it had nothing to do with rowing. Thursday night, while we were rigging our boats and going out for a practice row, two of our vans had the right sliding door windows shattered </div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B4h3E4YE6UuEZXpVeEMxUzNvRjg/view?usp=sharing">
+									<img class="thumb" src='news/knecht2017.png'/>
+									<div class="itemnews">
+										<div class="event">Pitt Crew Improves at Knecht</div>
+										<div class="details">West Windsor Township, NJ - With spring racing starting to really pick up speed, Pitt Crew headed back to New Jersey for their second race of the season. Having been on the water only a handful of times after Murphy Cup, the team was eager to race.</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B4h3E4YE6UuEMlBrbkxJWnlYeG8/view?usp=sharing">
+									<img class="thumb" src='news/murphy2017.png'/>
+									<div class="itemnews">
+										<div class="event">The Return to Murphy Cup</div>
+										<div class="details">Philadelphia, PA - After a successful week at Camp Bob Cooper in South Carolina, Pitt Crew returned to Pittsburgh to encounter frigid weather and high river flow. Subsequently, we were only able to get on the water a few times before our return to Murphy Cup.</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B4h3E4YE6UuENnRSdXpST0syLUk/view?usp=sharing">
+									<img class="thumb" src='news/hotocc2016.png'/>
+									<div class="itemnews">
+										<div class="event">Strong End to the Fall Season</div>
+										<div class="details">Fairfax Station, VA - Pitt crew traditionally ends their fall season in Fairfax Station, Virginia at the Head of the Occoquan, and this year was no different. The foliage was changing and beautiful and the weather was warm for the first time in years.</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B4h3E4YE6UuESFFNSktyWHpjdjg/view?usp=sharing">
+									<img class="thumb" src='news/hosr2016.png'/>
+									<div class="itemnews">
+										<div class="event">Pitt Crew Competes at Head of the Schuylkill</div>
+										<div class="details">Philadelphia, PA - Every Fall season there is one regatta which seems to have more significance and means a little more to everyone on the team. For Pitt Crew, that regatta was Head of the Schuylkill.</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0BwusR-EOCEPkYzNTd1NGdlRvVVk/view?usp=sharing">
+									<img class="thumb" src='news/hoto2k16.png'/>
+									<div class="itemnews">
+										<div class="event">A Strong Start to the Fall Season</div>
+										<div class="details">Pittsburgh, Pennsylvania - As always, the first race of the fall season is the annual Head of the Ohio regatta, held right here in PGH on the Allegheny. There were high expectations for Pitt Crew leading into this race and the team met them all.</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0BwusR-EOCEPkUFVKUUM5dDhSTFZleklLcHBrdnBBUmRpalc0/view?usp=sharing">
+									<img class="thumb" src='news/acra2k16.png'/>
+									<div class="itemnews">
+										<div class="event">The Future is Bright for Pitt Crew</div>
+										<div class="details"> Gainesville, Georgia – With the most intense year of training in recent memory, one of the most successful spring seasons as a team, Pitt Crew looked to end the season positively. The American Collegiate Rowing
+										Association’s National Championship Regatta provided the men of the V1 that opportunity.</div>
+									</div>
+								</a>
+								</div>
+								<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/open?id=0B2e6NTpp08HmWGF1M2hRNUNpVFU">
+									<img class="thumb" src='news/vails2k16.png'/>
+									<div class="itemnews">
+										<div class="event">A Competitive Turn</div>
+										<div class="details">Philadelphia, Pennsylvania - Thousands flooded out of Oakland at the end of the academic year to commence a well-deserved summer break. Among those who stayed on campus after finals week were the members of Pitt’s rowing team of over 50 strong.</div>
+									</div>
+								</a>
+								</div>
+								<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0BwusR-EOCEPkVmVYRVZGZFI4WWc/view?usp=sharing">
+									<img class="thumb" src='news/knecht2k16.png'/>
+									<div class="itemnews">
+										<div class="event">A Solid Start for the Spring</div>
+										<div class="details">West Windsor Township, NJ – After a mild winter, Pitt Crew was lucky enough to capitalize on crucial
+										water time before their first race. Unfortunately, it seems as though Mother Nature was saving “Winter
+										Weather” conditions for day one of the Knecht Cup Regatta where the team was greeted with rain, snow,
+										and 40mph wind gusts.</div>
+									</div>
+								</a>
+								</div>
+								<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B6lR16bJZm4oaE51QWJRcXdVbVZnUDA3VVhxX3ZNazI5V2VF/view?usp=sharing">
+									<img class="thumb" src='news/HOSR2015.jpg'/>
+									<div class="itemnews">
+										<div class="event">Success on the Schuylkill</div>
+										<div class="details">Philadelphia, Pennsylvania – Pitt Crew arrived early Saturday morning and immediately took to the Schuylkill with great ferocity and focus. With little time to rig before the first race, the team worked as a well-oiled machine in order to prepare our boats for the day.</div>
+									</div>
+								</a>
+								</div>
+								<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B6lR16bJZm4oeUxXdHFyQVFBdnJrLWZyQTQ5eXRZOTFXdElB/view?usp=sharing">
+									<img class="thumb" src='news/Hoto2015.jpg'/>
+									<div class="itemnews">
+										<div class="event">Pitt Crew Conquers Home Regatta</div>
+										<div class="details">Pittsburgh, Pennsylvania – Pitt Crew kicked off the fall racing season on a very cold, dreary day that riddled the Allegheny River with rain, sleet, and wind.</div>
+									</div>
+								</a>
+								</div>
+								<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B2e6NTpp08HmdlJhNnNTdkhNT0k/view?usp=sharing">
+									<img class="thumb" src='news/ACRAs2015.JPG'/>
+									<div class="itemnews">
+										<div class="event">A Triumph at the ACRA National Championship</div>
+										<div class="details">Gainesville, Georgia – With nine months of intense training, less than ideal spring water conditions, and three fruitless races behind them, Pitt Crew ended their season on a high note in Gainesville, Georgia, at the American Collegiate Rowing Association’s National Championship Regatta.</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B2e6NTpp08Hma1FOanQ5UjZ0RU0/view?usp=sharing">
+									<img class="thumb" src='news/Vails2015.JPG'/>
+									<div class="itemnews">
+										<div class="event">An Armada of 8s</div>
+										<div class="details">Philadelphia, Pennsylvania – Thousands flooded out of Oakland at the end of the academic year to commence a well-deserved summer break. Among those who stayed on campus after finals week were the members of Pitt’s rowing team of over 50 strong.</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+								<a href="https://drive.google.com/file/d/0B6lR16bJZm4odExkMzZfSEhrV0RVOVl0NF9pYmtYSElGUFRB/view?usp=sharing">
+									<img class="thumb" src='news/knecht2015.JPG'/>
+									<div class="itemnews">
+										<div class="event">Pitt Crew Builds Momentum at Knecht</div>
+										<div class="details">West Windsor Township, NJ – After a rough start to the Spring Season at the Murphy Cup Regatta two weeks ago, Pitt Crew headed back to New Jersey for their second race of the season. Having been on the  water only a handful of times after Murphy, the team was eager to race.</div>
+									</div>
+								</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+							<a href="https://drive.google.com/file/d/0B2e6NTpp08HmczhEYllsMUFrM1U/view?usp=sharing">
+								<img class="thumb" src='news/indoors2015.JPG'/>
+								<div class="itemnews">
+									<div class="event"> Pitt Crew Dominates Indoors</div>
+									<div class="details">Pittsburgh, Pennsylvania – This past Saturday, Pitt Crew raced in the Pittsburgh Indoor Sprints at the Kingsley Center in Bakery Square. The team won a total of 15 medals, as well as the Collegiate Team Points trophy.</div>
+								</div>
+							</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+							<a href="https://drive.google.com/file/d/0B7myQyrjp5qnQnZJRVRsRVFiZTc3VVY0ZUtjc3IzZWJwRTln/edit?usp=sharing">
+								<img class="thumb" src='news/indoors2014.png'/>
+								<div class="itemnews">
+									<div class="event">Pitt Crew Wins Team Points Trophy</div>
+									<div class="details">Pittsburgh, Pennsylvania – This past weekend, Pitt Crew raced in the Pittsburgh Indoor Sprints. The team won a total of 14 medals, as well as the collegiate team points trophy. Pitt’s open varsity women got the team off to a strong start. They</div>
+								</div>
+							</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+							<a href="https://drive.google.com/file/d/0B7myQyrjp5qnS0VVcjMxQVJSbTQ/edit?usp=sharing">
+								<img class="thumb" src='news/hotocc2013.png'/>
+								<div class="itemnews">
+									<div class="event">Fall Racing Season Comes to a Close</div>
+									<div class="details">Pittsburgh, PA – The past two weeks have been busy for Pitt Crew. Two weeks ago, the team travelled to the Head of the Occoquan, in Virginia, while this past weekend Pitt's novices raced on the Allegheny in the annual CarDuPitt scrimmage. In</div>
+								</div>
+							</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+							<a href="https://drive.google.com/file/d/0B7myQyrjp5qnX3NzX3I3OUNaTXc/edit?usp=sharing">
+								<img class="thumb" src='news/charles2013.png'/>
+								<div class="itemnews">
+									<div class="event">Pitt Crew Competes at Head of the Charles</div>
+									<div class="details">Boston, Massachusetts – This past weekend, Pitt Crew sent two boats to Boston, Massachusetts, to compete at the Head of the Charles. This is Pitt's eleventh consecutive year competing in what is the world's largest two day regatta. Pitt's</div>
+								</div>
+							</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+							<a href="https://drive.google.com/file/d/0B7myQyrjp5qnelpnaVlibVRoMWc/edit?usp=sharing">
+								<img class="thumb" src='news/hoto2013.png'/>
+								<div class="itemnews">
+									<div class="event">Pitt Crew Starts 25th Year on High Note</div>
+									<div class="details">Pittsburgh, Pennsylvania – Pitt Crew kicked off their 25th successful showing at the Head of the Ohio, bringing in nine top-five finishes between the varsity and novices. On the varsity level, the men opened the day with a commanding 25-second</div>
+								</div>
+							</a>
+							</div>
+							<hr/>
+							<div class="newsentry">
+							<a href="https://docs.google.com/file/d/181UO3Jt3dvzED7T71VmhcLfaq1NHpcq_MCBTzXXPvredxeN2fREaq380JZiZ/edit?usp=sharing">
+								<img class="thumb" src='news/acramen2013.png'/>
+								<div class="itemnews">
+									<div class="event">Pitt Crew Ends Season at ACRA Championship</div>
+									<div class="details">Gainesville, Georgia – With nine months of intense training, successful racing, and many happy memories behind them, Pitt Crew's season came to an end Sunday in Gainesville, Georgia, at the American Collegiate Rowing Association National Championship</div>
+								</div>
+							</a>
+							</div>
+							<hr/>
+							<!------- <div class="newsentry">
+								<div class='itemnews'>
+									<a href='archives.html'>News Archives</a>
+								</div>
+							</div> -------->
+						</div>
+					</div>
+				</p>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	$('textarea').autoResize();
+
+	$('#datepicker').hide();
+    $("#fill").hide();
+	$("#fill2").hide();
+
+    $("#alternate").click(function () {
+    	$("input").blur();
+    	$('#fill2').toggle();
+        $("#datepicker").toggle();
+    });
+
+    $(".open").click(function () {
+        $("#fill").show();
+    });
+    $("#close").click(function () {
+        $("#fill").hide();
+    });
+
+    $( "#datepicker" ).datepicker({
+   	dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+    onSelect: function(selectedDate){
+    	$("#datepicker").hide();
+    	$('#fill2').hide();
+    	$('#alternate').val(selectedDate);
+    	// alert(selectedDate);
+    }
+});
+
+</script>
+</body>
+</html>

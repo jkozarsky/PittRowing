@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Pitt Rowing</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta name="author" content="Nick Bourdakos">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- Font -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,700,900' rel='stylesheet' type='text/css'>
+
+<!-- Style Sheets -->
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/roster.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/attendence.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/trunk.css" />
+
+<!-- Scripts -->
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined')
+		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" +
+															"type='text/javascript'%3E%3C/script%3E"))
+</script>
+<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
+<script type="text/javascript" src="js/autoresize.jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+
+</head>
+
+<body>
+
+<!-- ///////////////////////////////////////////ATTENDANCE FORM//////////////////////////////////////////////////////// -->
+<div id="fill">
+<form action="https://docs.google.com/forms/d/1aRyQNi24i8hMCHBZ4Hb5zyXQ5W3g2P6eBarHKDpb3Vg/viewform?fbzx=-1185206941640522629" method="post" id="attendance_form" target="form_data_dest">
+	<div class="actionbar">
+		<div id="close"><input type="button" name="close" value="" class="close"/></div>
+		<div id="attendance_submit"><input type="submit" name="submit" value="" class="sumbit"/></div>
+		<div id="poptitle">Attendance Form</div>
+	</div>
+
+	<div class="formcont">
+		<div class="textp">Please fill in all of the fields below. If you need to be gone for multiple days, submit a new entry for each.</div>
+		<!-- <label for="name_entry">Name</label> -->
+		<div class="group">
+			<input type="text" name="entry.0.single" id="name_entry" required>
+			<span class="highlight"></span>
+	      	<span class="bar"></span>
+	      	<label class="label1">Name</label>
+		</div>
+		<div class="group">
+			<input type="text" name="entry.1.single" id="alternate" required>
+			<span class="highlight"></span>
+			<span class="bar"></span>
+			<label class="label1">Date</label>
+		</div>
+		<div id="fill2"><div id="datepicker"></div></div>
+		<!-- <label for="reason_entry">Reason</label> -->
+		<div class="group">
+			<textarea name="entry.3.single" rows="1" cols="75" required></textarea>
+			<span class="highlight"></span>
+			<span class="bar"></span>
+			<label class="label1">Reason</label>
+	    </div>
+	</div>
+</form>
+</div>
+	<!-- ///////////////////////////////////////////ATTENDANCE FORM//////////////////////////////////////////////////////// -->
+
+<!-- ///////////////////////////////////////////NAVIGATION//////////////////////////////////////////////////////// -->
+<div class="container">
+	<div class="topbar">
+		<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+			<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+				<li></li><li></li><li></li>
+			</ul>
+			<div class="containermi"><img src="spitt2.png" class="logo"/><h1 class="title">Rowing</h1></div>
+		</header>
+
+		<nav class="slide">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="roster.html" class="active">Roster</a></li>
+				<li><a href="coaches.html">Coaches</a></li>
+				<li><a href="join-info.html">Join</a></li>
+				<li><a href="facilities.html">Facilities</a></li>
+				<li><a href="conditions.html">Conditions</a></li>
+				<li><a href="socialMedia.html">Social Media</a></li>
+				<li><a href="https://spreadsheets.google.com/embeddedform?formkey=dF9ZS3cxREg4bWZQSU5vVTktc1l4WVE6MQ">Alumni</a></li>
+				<li><a href="donation.html">Donate</a></li>
+				<li><a href="https://spreadsheets.google.com/embeddedform?formkey=dDVuaVRNSU0zd2sxaGF2bjFLSlRqekE6MQ">Work Weekends</a></li>
+				<li><a href="https://sites.google.com/site/pittmastersrowingclub/home">Masters</a></li>
+				<li><a href="https://docs.google.com/forms/d/1aRyQNi24i8hMCHBZ4Hb5zyXQ5W3g2P6eBarHKDpb3Vg/viewform?fbzx=-1185206941640522629">Attendance Form</a></li>
+				<li><a href="teamDocs.html">Team Documents</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="content slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+		<ul class="responsive">
+			<li class="header-section">
+				<p class="placefiller">
+					<div class="nav2">
+					<ul>
+						<li>
+							<a href="join-info.html">Join</a>
+						</li>
+					</ul>
+					</div>
+				</p>
+			</li>
+<!-- ///////////////////////////////////////////NAVIGATION//////////////////////////////////////////////////////// -->
+			<li class="body-section">
+				<p class="placefiller">
+					<div class="crop">
+						<img class="slideshow" src='slideshow/oars.png'/>
+					</div>
+					<div class="banner">
+						<div class="varsity">Varsity Rowers</div>
+					</div>
+					<div class="listcontent">
+						<div class="men">
+						<table>
+							<caption>2019-2020 Men's Crew Roster</caption>
+								<tr>
+								<th><pre>Name<pre></th>
+								<th><pre>Year</pre></th>
+								<th><pre>&#9; &#9;</pre> </th>
+								<th ><pre>Hometown &#9;</pre></th>
+								<th><pre>High School</pre></th>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Men/AndrewFrancis.html'>Andrew<i></i> Francis&nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Dallas, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>Dallas High School</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Men/AndrewKim.html'>Andrew<i></i> Kim&nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Downington, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>Downington West High School</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Men/AntonBankov.html'>Anton<i></i> Bankov&nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Beaver, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>Beaver Area High School</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Men/ApoorvaSingh.html'>Apoorva<i></i> Singh&nbsp;</a></td>
+									<td>Jr.</td>
+									<td>&nbsp;</td>
+									<td>Glenmoore, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>Downington STEM Academy</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Men/BreannaBurns.html'>Breanna<i></i> Burns&nbsp;</a></td>
+									<td>Fr.</td>
+									<td>&nbsp;</td>
+									<td>Pittsburgh, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>Taylor Allderdice</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Men/JeffHirsch.html'>Jeff<i></i> Hirsch&nbsp;</a></td>
+									<td>Jr.</td>
+									<td>&nbsp;</td>
+									<td>Fort Washington, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>Upper Dublin</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Men/JordanPfenninger.html'>Jordan<i></i> Pfenninger&nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Lebanon Township, NJ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>Voorhees High School</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Men/MasonBenz.html'>Mason<i></i> Benz&nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Lancaster, NY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>St. Joseph's Collegiate Institute</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Men/MattGuo.html'>Matt<i></i> Guo&nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Chalfont, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>Central Bucks High School</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Men/MichaelDeGregorio.html'>Michael<i></i> DeGregorio&nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Pittsburgh, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>Shady Side Academy</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Men/TJMundy.html'>TJ<i></i> Mundy&nbsp;</a></td>
+									<td>Jr.</td>
+									<td>&nbsp;</td>
+									<td>Long Valley, NJ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>West Morris Central High School</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Men/ZacharySebastian.html'>Zachary<i></i> Sebastian&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+									<td>Jr.</td>
+									<td>&nbsp;</td>
+									<td>Buffalo, NY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>Canisius</td>
+								</tr>
+						</table>
+
+
+						<table>
+							<caption><br>2019-2020 Women's Crew Roster</caption>
+								<tr>
+								<th><pre>Name<pre></th>
+								<th><pre>Year</pre></th>
+								<th><pre>&#9; &#9;</pre> </th>
+								<th ><pre>Hometown &#9;</pre></th>
+								<th><pre>High School</pre></th>
+								</tr>
+
+
+								<tr>
+									<td><a href='rosterProfiles/Women/AineDougherty.html'>Aine<i></i> Dougherty &nbsp;</a></td>
+									<td>Jr.</td>
+									<td>&nbsp;</td>
+									<td>Glenside, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Cheltenham</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Women/AlyssaMcHoes.html'>Alyssa<i></i> McHoes &nbsp;</a></td>
+									<td>Sr.</td>
+									<td>&nbsp;</td>
+									<td>Sheridan, Wy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Sheridan</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Women/AnnaWeiland.html'>Anna<i></i> Weiland &nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Greensburg, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Hempfield Area High School</td>
+								</tr>
+
+								<tr>
+									<td><a href='rosterProfiles/Women/AnneliseWanner.html'>Annelise<i></i> Wanner &nbsp;</a></td>
+									<td>Jr.</td>
+									<td>&nbsp;</td>
+									<td>Downington, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Downington STEM Academy</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Women/ClaireMazur.html'>Claire<i></i> Mazur &nbsp;</a></td>
+									<td>Jr.</td>
+									<td>&nbsp;</td>
+									<td>Pittsburgh, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Winchester Thurston</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Women/DestinyElings.html'>Destiny<i></i> Elings &nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>West Grove, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Avon Grove High School</td>
+								</tr>
+								<tr>
+									<td><a href='rosterProfiles/Women/EmilyLubinski.html'>Emily<i></i> Lubinski &nbsp;</a></td>
+									<td>Fr.</td>
+									<td>&nbsp;</td>
+									<td>Warminster, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Mount Saint Joseph Academy</td>
+								</tr>
+
+								<tr>
+									<td><a href='rosterProfiles/Women/EmmaGay.html'>Emma<i></i> Gay &nbsp;</a></td>
+									<td>Jr.</td>
+									<td>&nbsp;</td>
+									<td>Richmond, VA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Maggie L. Walker Governor's School</td>
+								</tr>
+
+								<tr>
+									<td><a href='rosterProfiles/Women/MadisonCieri.html'>Madison<i></i> Cieri &nbsp;</a></td>
+									<td>Jr.</td>
+									<td>&nbsp;</td>
+									<td>Manalapan, NJ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Manalapan High School</td>
+								</tr>
+
+								<tr>
+									<td><a href='rosterProfiles/Women/MaiahMoody.html'>Maiah<i></i> Moody &nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Washington, DC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Woodrow Wilson</td>
+								</tr>
+
+								<tr>
+									<td><a href='rosterProfiles/Women/MarleeBratsch.html'>Marlee<i></i> Bratsch &nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Murfreesboro, TA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Central Magnet School</td>
+								</tr>
+
+								<tr>
+									<td><a href='rosterProfiles/Women/MeganSwintosky.html'>Megan<i></i> Swintosky &nbsp;</a></td>
+									<td>Jr.</td>
+									<td>&nbsp;</td>
+									<td>Hatfield, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Christopher Dock</td>
+								</tr>
+
+								<tr>
+									<td><a href='rosterProfiles/Women/MeghanVanderWoude.html'>Meghan<i></i> Vander Woude &nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Stratham, NH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Exeter High School</td>
+								</tr>
+
+								<tr>
+									<td><a href='rosterProfiles/Women/NatashaSkorupski.html'>Natasha<i></i> Skorupski &nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Bryn Mawr, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Harriton High School</td>
+								</tr>
+
+								<tr>
+									<td><a href='rosterProfiles/Women/RachelWalker.html'>Rachel<i></i> Walker &nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Warrenton, VA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Kettle Run High School</td>
+								</tr>
+
+								<tr>
+									<td><a href='rosterProfiles/Women/RileyLewis.html'>Riley<i></i> Lewis&nbsp;</a></td>
+									<td>Sr.</td>
+									<td>&nbsp;</td>
+									<td>Lancaster, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+									<td>Lampeter-Strasburg</td>
+								</tr>
+
+								<tr>
+									<td><a href='rosterProfiles/Women/ToniDumitriu.html'>Toni<i></i> Dumitriu &nbsp;</a></td>
+									<td>So.</td>
+									<td>&nbsp;</td>
+									<td>Pittsburgh, PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>Winchester Thurston</td>
+								</tr>
+
+						</table>
+						</div>
+					</div>
+				</p>
+			</li>
+		</ul>
+	</div>
+
+</div>
+<script type="text/javascript">
+
+	$('textarea').autoResize();
+
+	$('#datepicker').hide();
+    $("#fill").hide();
+	$("#fill2").hide();
+
+    $("#alternate").click(function () {
+    	$("input").blur();
+    	$('#fill2').toggle();
+        $("#datepicker").toggle();
+    });
+
+    $(".open").click(function () {
+        $("#fill").show();
+    });
+    $("#close").click(function () {
+        $("#fill").hide();
+    });
+
+    $( "#datepicker" ).datepicker({
+   	dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+    onSelect: function(selectedDate){
+    	$("#datepicker").hide();
+    	$('#fill2').hide();
+    	$('#alternate').val(selectedDate);
+    	// alert(selectedDate);
+    }
+});
+
+</script>
+</body>
+</html>
