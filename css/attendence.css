@@ -1,0 +1,399 @@
+#fill2{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 10;
+	-moz-animation: fade .8s;
+	-webkit-animation: fade .8s; /* Chrome, Safari, Opera */
+    animation: fade .8s;
+}
+#datepicker{
+	margin: 10% auto;
+	width: 280px;
+	-moz-box-shadow: 0px 19px 19px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 19px 19px rgba(0,0,0,0.30);
+	box-shadow: 0px 19px 19px rgba(0,0,0,0.30);
+}
+
+.actionbar{
+	padding: 4px;
+	background-color: #518be6;
+}
+
+#attendance_submit input{
+    background:url(../done.png) no-repeat;
+    cursor:pointer;
+    background-size: 100%;
+    width: 48px;
+    height: 48px;
+    border: none;
+    float: right;
+}
+#close input{
+    background:url(../arrow.png) no-repeat;
+    cursor:pointer;
+    background-size: 100%;
+    width: 48px;
+    height: 48px;
+    border: none;
+    float: left;
+}
+#poptitle{
+	height:48px;
+	line-height: 48px;
+	font-size: 1.31em;
+	color: rgba(255,255,255,.87);
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#fill{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	position: fixed;
+	z-index: 5;
+	-moz-animation: fade .8s;
+	-webkit-animation: fade .8s; /* Chrome, Safari, Opera */
+    animation: fade .8s;
+}
+.formcont{
+	padding: 5%;
+}
+.textp{
+	color: #212121;
+	margin-bottom: 30px;
+}
+
+/*input[type="text"], textarea {
+	font: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	color: #212121;
+	padding: 12px 0;
+	font-size: 1em;
+	margin: 7px auto 16px auto;
+	width:100%;
+	display:block;
+	border:none;
+	border-bottom: 1px solid #d2d2d2;
+}*/
+/*textarea {
+	padding: 12px 0 0 0;
+}*/
+/*input[type="text"]:focus, textarea:focus {
+	color: #212121;
+	font-size: 1em;
+	outline: none;
+	border:none;
+	border-bottom: 2px solid #ffcd40;
+}*/
+
+
+
+
+
+input[type="text"], textarea {
+	font: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+}
+input[type="text"]:focus, textarea:focus {
+	outline: none;
+	border:none;
+	border-bottom: none;
+}
+form{
+	background-color: #ffffff;
+	margin: 15% auto;
+	width: 30%;
+	-moz-box-shadow: 0px 19px 19px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 19px 19px rgba(0,0,0,0.30);
+	box-shadow: 0px 19px 19px rgba(0,0,0,0.30);
+	-moz-animation: slideup .8s;
+	-webkit-animation: slideup .8s; /* Chrome, Safari, Opera */
+    animation: slideup .8s;
+}
+
+/* Calendar Container */
+#ui-datepicker-div {
+	width: 280px;
+}
+#ui-datepicker-div a {
+	text-decoration: none;
+}
+/* Date Picker Header */
+.ui-datepicker-header {
+	height:56px;
+	background-color: #518be6;
+	color: rgba(255,255,255,.87);
+}
+.ui-datepicker-title {
+	font-size: 1.31em;
+	line-height: 56px;
+	text-align: center;	
+}
+.ui-datepicker-prev {
+	background-image: url('../larrow.png');
+	float: left;
+}
+.ui-datepicker-next {
+	background-image: url('../rarrow.png');
+	float: right;
+}
+.ui-datepicker-prev, .ui-datepicker-next {
+	display: inline-block;
+	margin: 4px;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	cursor: pointer;
+	line-height: 800%;
+	background-size: 100%;
+	overflow: hidden;
+}
+/* Date Picker Table */
+.ui-datepicker table {
+	width: 100%;
+	background-color: #fafafa;
+	-moz-box-shadow: 0px 2px 3px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 19px 19px rgba(0,0,0,0.24);
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.30);
+}
+.ui-datepicker thead {
+
+}
+.ui-datepicker th {
+	padding: 32px 0px 8px 0px;
+	color: #737373;
+	text-transform: uppercase;
+}
+.ui-datepicker tbody td {
+}
+.ui-datepicker tbody td:last-child {
+}
+.ui-datepicker tbody tr {
+}
+.ui-datepicker tbody tr:last-child {
+}
+.ui-datepicker td span, .ui-datepicker td a {
+	display: inline-block;
+	text-align: center;
+	margin: 4px 2px;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	color: #202020;
+}
+/* Date Picker Hover & Active */
+.ui-datepicker-calendar .ui-state-default {
+}
+.ui-datepicker-calendar .ui-state-hover {
+	color: #fafafa;
+	background: #518be6;
+	border-radius: 50%;
+}
+.ui-datepicker-calendar .ui-state-active {
+	color: #518be6;
+}
+.ui-datepicker-calendar .ui-state-hover{
+	color: #fafafa;
+}
+.ui-datepicker th:last-child{
+	padding-right: 14px;
+}
+.ui-datepicker th:first-child{
+	padding-left: 14px;
+}
+.ui-datepicker-calendar td:first-child{
+	padding-left: 14px;
+}
+.ui-datepicker-calendar td:last-child {
+	padding-right: 14px;
+}
+.ui-datepicker-calendar tr:last-child td{
+	padding-bottom:14px;
+}
+.ui-datepicker-unselectable .ui-state-default {
+
+}
+
+
+/* form starting stylings ------------------------------- */
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input, textarea{
+  font-size:1em;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+textarea{
+	padding:10px 10px 10px 5px;
+}
+input:focus, textarea:focus{ 
+	outline:none;
+}
+/* LABEL ======================================= */
+.label1				 {
+  color:#999; 
+  font-size:1.2em;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ .label1, input:valid ~ .label1 		{
+  top:-20px;
+  font-size:1em;
+  color:#fcbd21;
+}
+
+textarea:focus ~ .label1, textarea:valid ~ .label1 		{
+  top:-20px;
+  font-size:1em;
+  color:#fcbd21;
+}
+
+/* BOTTOM BARS ================================= */
+.bar{
+	position:relative;
+	display:block;
+	width:300px;
+}
+.bar:before, .bar:after{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#fcbd21; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+textarea:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#fcbd21; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#fcbd21; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#fcbd21; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+@-webkit-keyframes slideup {
+	from { margin-top: 100%; }
+  to 	{ margin-top: 15%; }
+}
+@-moz-keyframes slideup {
+	from { margin-top: 100%; }
+  to 	{ margin-top: 15%;}
+}
+@keyframes slideup {
+	from { margin-top: 100%; }
+  to 	{ margin-top: 15%; }
+}
+@-webkit-keyframes slideupfull {
+	from { margin-top: 100%; }
+  to 	{ margin-top: 0%; }
+}
+@-moz-keyframes slideupfull {
+	from { margin-top: 100%; }
+  to 	{ margin-top: 0%;}
+}
+@keyframes slideupfull {
+	from { margin-top: 100%; }
+  to 	{ margin-top: 0%; }
+}
+
+@-webkit-keyframes fade {
+	from { background-color: rgba(0,0,0,0); }
+  to 	{ background-color: rgba(0,0,0,.5); }
+}
+@-moz-keyframes fade {
+	from { background-color: rgba(0,0,0,0); }
+  to 	{ background-color: rgba(0,0,0,.5);}
+}
+@keyframes fade {
+	from { background-color: rgba(0,0,0,0); }
+  to 	{ background-color: rgba(0,0,0,.5); }
+}
+@media only screen and (max-width: 990px) {
+/*	#fill{
+		position: relative;
+	}*/
+	form{
+	overflow: scroll;
+	margin: 0;
+	background-color: #ffffff;
+	height: 100%;
+	width: 100%;
+	-moz-animation: slideupfull .8s;
+	-webkit-animation: slideupfull .8s; /* Chrome, Safari, Opera */
+    animation: slideupfull .8s;
+}
+
+}

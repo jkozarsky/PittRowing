@@ -1,0 +1,89 @@
+.crop{
+	overflow: hidden;
+	font-size:0px;
+}
+img.slideshow{
+	width:100%;
+	font-size:0px
+}
+.banner{
+	background-color: #5999ff;
+	width: 100%;
+	height: 8.3%;
+}
+.varsity{
+	color: #ffffff;
+	font-size: 2.4em;
+	font-weight: 300;
+	padding: 20px 29px;
+}
+.listheader{
+	font-size: .875em;
+	color: #a1a1a1;
+	margin-bottom: 29px;
+}
+.name{
+	font-size: 1.31em;
+	color: #212121;
+	display: inline-block;
+}
+.bold{
+	font-size: 1em;
+	color: #424242;
+}
+.details{
+	font-size: 1em;
+	color: #999999;
+	margin-bottom: 20px;
+}
+.info{
+	width: 300px;
+	display: inline-block;
+}
+.photo{
+	height:100px;
+	width:100px;
+	margin-right: 29px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+}
+.profile{
+	margin-bottom: 30px;
+}
+#class{
+	display: inline-block;
+}
+.men{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 29px;
+}
+.women{
+	display: inline-block;
+	vertical-align: top;
+}
+.listcontent{
+	padding: 29px;
+}
+@media only screen and (max-width: 990px) {
+	.crop{
+		height:auto;
+		overflow: hidden;
+	}
+	.photo{
+		margin: 0;
+	}
+	.info{
+		width: fill;
+	}
+	.women{
+		width: 100%;
+		margin-top: 29px;
+	}
+	.men{
+		width: 100%;
+		border-bottom: 1px solid #d9d9d9;
+	}
+}

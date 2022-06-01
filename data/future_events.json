@@ -1,0 +1,24 @@
+{
+	"events": [
+		{
+			"date": "3/29/14",
+			"description": "Murphy Cup",
+			"expiry": 1395993600
+		},
+		{
+			"date": "4/12/14 - 4/13/14",
+			"description": "Knecht Cup",
+			"expiry": 1397462400
+		},
+		{
+			"date": "5/9/14 - 5/10/14",
+			"description": "Dad Vail Regatta",
+			"expiry": 1399795200
+		},
+		{
+			"date": "5/24/14 - 5/25/14",
+			"description": "ACRA Championships",
+			"expiry": 1401091200
+		}
+	]
+}
